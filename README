@@ -1,0 +1,14 @@
+
+
+DYNAMICALLY LOAD MICROSOFT CRM 4.0 JAVASCRIPT FRAMEWORK
+
+Add the code in the form OnLoad event..
+
+//Create a ‘script’ element
+var script = document.createElement(‘script’);
+// Set it’s ‘language’ attribute
+script.language = ‘javascript’;
+// Set it’s ‘src’ attribute
+script.src = “/ISV/JS/CrmServices.js”;
+// Now add this new element to the head tag
+document.getElementsByTagName(‘head’)[0].appendChild(script);
